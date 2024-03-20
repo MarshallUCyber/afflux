@@ -38,6 +38,7 @@ class ImageFolderThread(QtCore.QThread):
         self.recursive = recursive
         self.follow_symlinks = follow_symlinks
         self.result = True
+        self.zip = zip_image
 
     def run(self):
         imager = imaging.Imager(self.verbose, zip=self.zip)
