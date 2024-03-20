@@ -228,7 +228,7 @@ The `generic_http` plugin is used for imaging HTTP directories.
 
 ## Usage Examples
 
-Verbosely image an Android phone (`10.11.1.5`) over the network to `test.aff4`. 
+Verbosely image an Android device (`10.11.1.5`) over the network to `test.aff4`. 
 Attempt to get root access, start imaging at `/` and ignore `/dev` and `/proc`. 
 
 ```
@@ -252,7 +252,10 @@ Image an SMB share on a Windows machine.
 ```
 python3 afflux.py -p generic_smb -a WINDEV2210EVAL -S \Users\User\Desktop\shared_folder -o test.aff4 -v -u User -P test
 ```
-
+Verbosely image the sdcard within an Android device `(via ADB)` to `test.aff4' using the afflux standalone windows executable.
+```
+afflux_windows.exe -p android_adb -a USB -d /sdcard -o test.aff4 -v
+```
 ## Pre-built Executables
 
 Portable pre-built executables can be found on the [Releases]([https://github.com/MarshallUCyber/afflux/releases/tag/Alpha])
