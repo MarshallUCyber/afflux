@@ -1,0 +1,6 @@
+[submodule "pymobiledevice3"]
+	path = pymobiledevice3
+	url = https://github.com/doronz88/pymobiledevice3
+[submodule "pyaff4"]
+	path = pyaff4
+	url = https://github.com/Starwarsfan2099/pyaff4/

@@ -1,0 +1,59 @@
+Requires libusbmuxd-tools, Openssl 1.1.1l, swig
+
+Windows:
+
+Get "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+
+Install fastchunking on Windows.
+
+Download files from here: https://pypi.org/project/fastchunking/#files
+
+Extract using 7-Zip.
+
+`pip install pybindgen`
+
+`python setup.py build`
+
+`python setup.py install`
+
+For themes:
+
+`git clone https://github.com/Alexhuszagh/BreezeStyleSheets`
+
+`cd BreezeStyleSheets`
+
+`python configure.py --styles=all --extensions=all --resource breeze.qrc`
+
+`pyrcc5 dist\breeze.qrc -o ..\afflux\breeze_resources.py`
+
+Then:
+
+Enter `afflux` directory.
+
+`pip install -r requirments_windows.txt`
+`cd pyaff4`
+`python setup.py install`
+`cd ..\pymobiledevice3`
+`python setup.py install`
+
+pyuic5 gui/afflux.ui -o gui/afflux_gui_ui.py
+
+Snappy windows: https://www.lfd.uci.edu/~gohlke/pythonlibs/#python-snappy
+
+MAN:
+https://www.howtogeek.com/682871/how-to-create-a-man-page-on-linux/
+
+pandoc afflux.1.md -s -t man -o afflux.1
+sudo mkdir /usr/local/man/man1
+sudo cp afflux.1 /usr/local/man/man1
+sudo gzip /usr/local/man/man1/afflux.1 -f
+sudo mandb
+
+dark designer Qt5
+
+export QT_STYLE_OVERRIDE="Adwaita-Dark"; /usr/lib/qt5/bin/designer
+
+Corellium:
+sudo openvpn --config Downloads/android.ovpn
+sudo usbmuxd
+sudo usbfluxd -f -r 10.11.1.1:5000

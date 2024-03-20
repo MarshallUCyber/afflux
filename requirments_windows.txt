@@ -1,0 +1,66 @@
+adb-shell
+aes-keywrap
+arrow
+asn1
+BeautifulSoup4
+bpylist2>=4.0.1
+cached-property
+click
+cmd2
+colorama
+coloredlogs
+construct>=2.9.29
+cryptography>=35.0.0
+daemonize
+expiringdict
+fastapi[all]
+fastchunking == 0.0.3
+future
+gpxpy
+hexdump
+html5lib == 1.0.1
+inquirer
+intervaltree
+ipsw_parser<=1.1.2
+IPython
+libewf-python
+libusb1
+lz4
+nest_asyncio<=1.5.5
+packaging
+passlib
+Pillow
+pyasn1
+pycrashreport<=1.0.5
+pycryptodome
+pycryptoplus
+pygments
+pygnuutils<=0.0.6
+pyimg4<=0.7
+pyinstaller
+pykdebugparser<=1.2.4
+pynacl
+pyOpenSSL
+pypiwin32
+PyQt5==5.15.5
+PyQtWebEngine==5.15.5
+pysftp
+python-dateutil == 2.8.0
+python-snappy
+pytz
+pyusb<=1.2.1
+pyyaml == 5.1
+rdflib[sparql] == 4.2.2
+remotezip
+requests
+setuptools
+six
+smbprotocol
+starlette
+termcolor
+tk
+tqdm
+tzlocal == 2.1
+uvicorn<=0.15.0
+win32_setctime
+wsproto

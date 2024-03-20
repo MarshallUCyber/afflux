@@ -1,0 +1,1566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>589</width>
+    <height>930</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>589</width>
+    <height>930</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>5555</width>
+    <height>5555</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Afflux GUI</string>
+  </property>
+  <property name="accessibleName">
+   <string/>
+  </property>
+  <property name="accessibleDescription">
+   <string/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetNoConstraint</enum>
+    </property>
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="ios">
+       <attribute name="title">
+        <string>iOS</string>
+       </attribute>
+       <attribute name="toolTip">
+        <string>Image iOS devices.</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_29">
+        <item>
+         <widget class="QFrame" name="iosDeviceFrame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_20">
+           <item>
+            <widget class="QGroupBox" name="iosGroupBox">
+             <property name="title">
+              <string>iOS Devices</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_14">
+              <item row="2" column="0" colspan="2">
+               <widget class="QWidget" name="widget" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_24">
+                 <item>
+                  <widget class="QWidget" name="iosInfoWidget" native="true">
+                   <layout class="QHBoxLayout" name="horizontalLayout_25">
+                    <item>
+                     <widget class="QWidget" name="iosTitleWidget" native="true">
+                      <layout class="QVBoxLayout" name="verticalLayout_21">
+                       <item>
+                        <widget class="QLabel" name="iosVersionLabelTitle">
+                         <property name="text">
+                          <string>iOS:</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="iosBuildLabelTitle">
+                         <property name="text">
+                          <string>Build:</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="iosModelLabelTitle">
+                         <property name="text">
+                          <string>Model:</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QWidget" name="iosTitleInfoWidget" native="true">
+                      <layout class="QVBoxLayout" name="verticalLayout_22">
+                       <item>
+                        <widget class="QLabel" name="iosVersionLabel">
+                         <property name="text">
+                          <string>&lt;no device selected&gt;</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="iosBuildLabel">
+                         <property name="text">
+                          <string>&lt;no device selected&gt;</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="iosModelLabel">
+                         <property name="text">
+                          <string>&lt;no device selected&gt;</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="iosHorizontalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="Line" name="iosInfoSeperator">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="iosOptionsWidget" native="true">
+                   <property name="layoutDirection">
+                    <enum>Qt::LeftToRight</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_23">
+                    <item>
+                     <widget class="QRadioButton" name="iosAFCRadioButton">
+                      <property name="toolTip">
+                       <string>Default iOS data transmission protocol. </string>
+                      </property>
+                      <property name="text">
+                       <string>AFC</string>
+                      </property>
+                      <property name="checked">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QRadioButton" name="iosAFC2RadioButton">
+                      <property name="toolTip">
+                       <string>Protocol on some jailbroken devices.</string>
+                      </property>
+                      <property name="text">
+                       <string>AFC2</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="Line" name="iosOptionsSeperator">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QCheckBox" name="iosClearPairsCheckbox">
+                      <property name="toolTip">
+                       <string>Clear previous pairs.</string>
+                      </property>
+                      <property name="text">
+                       <string>Clear Pairs</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QCheckBox" name="iosRePairCheckbox">
+                      <property name="toolTip">
+                       <string>Re-pair the device.</string>
+                      </property>
+                      <property name="text">
+                       <string>Re-Pair</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="0" column="0" colspan="2">
+               <layout class="QHBoxLayout" name="horizontalLayout_10">
+                <item>
+                 <widget class="QComboBox" name="iosDeviceComboBox">
+                  <property name="toolTip">
+                   <string>Connected iOS devices.</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="iosRefreshButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>Refresh</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="android">
+       <attribute name="title">
+        <string>Android</string>
+       </attribute>
+       <attribute name="toolTip">
+        <string>Image Android devices.</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QFrame" name="androidFrame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0">
+            <widget class="QGroupBox" name="androidGroupBox">
+             <property name="title">
+              <string>Android Devices</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="6" column="0" colspan="2">
+               <widget class="QWidget" name="androidOptionsWidget" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_26">
+                 <item>
+                  <widget class="QWidget" name="androidInfoWidget" native="true">
+                   <layout class="QHBoxLayout" name="horizontalLayout_27">
+                    <item>
+                     <widget class="QWidget" name="androidInfoTitlesWidget" native="true">
+                      <layout class="QVBoxLayout" name="verticalLayout_24">
+                       <item>
+                        <widget class="QLabel" name="androidVersionTitleLabel">
+                         <property name="text">
+                          <string>Version:</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="androidBuildTitleLabel">
+                         <property name="text">
+                          <string>Build:</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="androidModelTitleLabel">
+                         <property name="text">
+                          <string>Model:</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QWidget" name="androidInfoLabelsWidget" native="true">
+                      <layout class="QVBoxLayout" name="verticalLayout_25">
+                       <item>
+                        <widget class="QLabel" name="androidVersionLabel">
+                         <property name="text">
+                          <string>&lt;no device selected&gt;</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="androidBuildLabel">
+                         <property name="text">
+                          <string>&lt;no device selected&gt;</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="androidModelLabel">
+                         <property name="text">
+                          <string>&lt;no device selected&gt;</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="androidHorizontalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="Line" name="androidOptionsLine">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="widget_12" native="true">
+                   <layout class="QVBoxLayout" name="verticalLayout_26">
+                    <item>
+                     <widget class="QCheckBox" name="androidRootCheckbox">
+                      <property name="toolTip">
+                       <string>Whether the device is known to be rooted or not.</string>
+                      </property>
+                      <property name="text">
+                       <string>Root</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QCheckBox" name="androidRePairCheckbox">
+                      <property name="toolTip">
+                       <string>Re-pair the device.</string>
+                      </property>
+                      <property name="text">
+                       <string>Re-Pair</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QCheckBox" name="androidFollowSymlinksCheckbox">
+                      <property name="text">
+                       <string>Follow Symlinks</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="7" column="0">
+               <widget class="QWidget" name="widget_15" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_28">
+                 <item>
+                  <widget class="QWidget" name="androidAddressWidget" native="true">
+                   <layout class="QVBoxLayout" name="verticalLayout_27">
+                    <item>
+                     <widget class="QLabel" name="androidAddressLabel">
+                      <property name="text">
+                       <string>IP Address[:port]:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="androidAddressLineEdit">
+                      <property name="toolTip">
+                       <string>IP address of a remote android device.</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="androidDirectoryWidget" native="true">
+                   <layout class="QVBoxLayout" name="verticalLayout_28">
+                    <item>
+                     <widget class="QLabel" name="androidDirectoryLabel">
+                      <property name="text">
+                       <string>Directory:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="androidDirectoryLineEdit">
+                      <property name="toolTip">
+                       <string>Dirctory to image.</string>
+                      </property>
+                      <property name="text">
+                       <string>/</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="0" column="0" colspan="2">
+               <layout class="QHBoxLayout" name="horizontalLayout_9">
+                <item>
+                 <widget class="QComboBox" name="androidDeviceComboBox">
+                  <property name="toolTip">
+                   <string>Connected Android devices.</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="androidRefreshButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>Refresh</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="filesystem">
+       <attribute name="title">
+        <string>Filesystem</string>
+       </attribute>
+       <attribute name="toolTip">
+        <string>Image a filesystem items.</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QFrame" name="filesystemFrame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="0" column="0">
+            <widget class="QGroupBox" name="filesystemGroupBox">
+             <property name="title">
+              <string>File System</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QLabel" name="filesystemPathLabel">
+                <property name="text">
+                 <string>Path or file(s):</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="filesystemPathLineEdit">
+                <property name="toolTip">
+                 <string>Path or files to image.</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_18" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                 <item>
+                  <widget class="QWidget" name="widget_19" native="true">
+                   <layout class="QHBoxLayout" name="horizontalLayout_8">
+                    <item>
+                     <widget class="QPushButton" name="filesystemFilesButton">
+                      <property name="toolTip">
+                       <string>Files to image.</string>
+                      </property>
+                      <property name="text">
+                       <string>File (s)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="filesystemFoldersButton">
+                      <property name="toolTip">
+                       <string>Folders to image.</string>
+                      </property>
+                      <property name="text">
+                       <string>Folder</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="Line" name="line_3">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="widget_20" native="true">
+                   <layout class="QVBoxLayout" name="verticalLayout_31">
+                    <item>
+                     <widget class="QCheckBox" name="filesystemRecursiveCheckBox">
+                      <property name="toolTip">
+                       <string>Recurively image directories.</string>
+                      </property>
+                      <property name="text">
+                       <string>Recursive</string>
+                      </property>
+                      <property name="checked">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QCheckBox" name="filesystemFollowSymlinksCheckbox">
+                      <property name="toolTip">
+                       <string>Follow symlinks or not.</string>
+                      </property>
+                      <property name="text">
+                       <string>Follow Symlinks</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="drives">
+       <attribute name="title">
+        <string>Drive</string>
+       </attribute>
+       <attribute name="toolTip">
+        <string>Image a mounted drive.</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QFrame" name="drivesFrame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QGroupBox" name="driveGroupBox">
+             <property name="title">
+              <string>Drives</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <widget class="QLabel" name="drivesTitleLabel">
+                <property name="text">
+                 <string>Drive:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="drivesComboBox">
+                <property name="toolTip">
+                 <string>Connected drives.</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="drivesRecursiveCheckBox">
+                <property name="toolTip">
+                 <string>Recurively image directories.</string>
+                </property>
+                <property name="text">
+                 <string>Recursive</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="drivesFollowSymlinksCheckbox">
+                <property name="toolTip">
+                 <string>Follow symlinks or not.</string>
+                </property>
+                <property name="text">
+                 <string>Follow Symlinks</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="ssh">
+       <attribute name="title">
+        <string>SSH</string>
+       </attribute>
+       <attribute name="toolTip">
+        <string>Image a remote device via SSH.</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_14">
+        <item>
+         <widget class="QFrame" name="sshFrame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_16">
+           <item row="1" column="0">
+            <widget class="QGroupBox" name="sshGroupBox">
+             <property name="title">
+              <string>SSH</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_13">
+              <item>
+               <widget class="QWidget" name="sshWidget_1" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <widget class="QLabel" name="sshServerLabel">
+                   <property name="text">
+                    <string>Server</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="sshDirectoryLabel">
+                   <property name="text">
+                    <string>Directory</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="sshWidget_2" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <widget class="QLineEdit" name="sshServerLineEdit">
+                   <property name="toolTip">
+                    <string>SSH server or IP address.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="sshDirectoryLineEdit">
+                   <property name="toolTip">
+                    <string>Directory to image.</string>
+                   </property>
+                   <property name="text">
+                    <string>/</string>
+                   </property>
+                   <property name="placeholderText">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="sshWidget_3" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_4">
+                 <item>
+                  <widget class="QLabel" name="sshUsernameLabel">
+                   <property name="text">
+                    <string>Username</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="sshPasswordLabel">
+                   <property name="text">
+                    <string>Password</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="sshWidget_5" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <item>
+                  <widget class="QLineEdit" name="sshUsernameLineEdit">
+                   <property name="toolTip">
+                    <string>SSH username.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="sshPasswordLineEdit">
+                   <property name="toolTip">
+                    <string>SSH password.</string>
+                   </property>
+                   <property name="echoMode">
+                    <enum>QLineEdit::Password</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="line_7">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="sshWidget_4" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_21">
+                 <item>
+                  <widget class="QCheckBox" name="sshFollowSymlinksCheckbox">
+                   <property name="toolTip">
+                    <string>Follow symlinks or not.</string>
+                   </property>
+                   <property name="text">
+                    <string>Follow Symlinks</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="sshRecursiveCheckbox">
+                   <property name="toolTip">
+                    <string>Recurively image directories.</string>
+                   </property>
+                   <property name="text">
+                    <string>Recursive</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_8">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="sshPortLabel">
+                   <property name="text">
+                    <string>Port:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="sshPortLineEdit">
+                   <property name="toolTip">
+                    <string>SSH port, default is 22.</string>
+                   </property>
+                   <property name="text">
+                    <string>22</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="ftp">
+       <attribute name="title">
+        <string>FTP</string>
+       </attribute>
+       <attribute name="toolTip">
+        <string>Image a remote device via FTP.</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_17">
+        <item>
+         <widget class="QFrame" name="ftpFrame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_18">
+           <item row="1" column="0">
+            <widget class="QGroupBox" name="ftpGroupBox">
+             <property name="title">
+              <string>FTP</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_16">
+              <item>
+               <widget class="QWidget" name="ftpWidget_5" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_11">
+                 <item>
+                  <widget class="QLabel" name="ftpServerLabel">
+                   <property name="text">
+                    <string>Server</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="ftpDirectoryLabel">
+                   <property name="text">
+                    <string>Directory</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="ftpWidget_1" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_12">
+                 <item>
+                  <widget class="QLineEdit" name="ftpServerLineEdit">
+                   <property name="toolTip">
+                    <string>FTP server or IP address.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="ftpDirectoryLineEdit">
+                   <property name="toolTip">
+                    <string>Directory to image. </string>
+                   </property>
+                   <property name="text">
+                    <string>/</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="ftpWidget_2" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_13">
+                 <item>
+                  <widget class="QLabel" name="ftpUsernameLabel">
+                   <property name="text">
+                    <string>Username</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="ftpPasswordLabel">
+                   <property name="text">
+                    <string>Password</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="ftpWidget_3" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_14">
+                 <item>
+                  <widget class="QLineEdit" name="ftpUsernameLineEdit">
+                   <property name="toolTip">
+                    <string>FTP username.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="ftpPasswordLineEdit">
+                   <property name="toolTip">
+                    <string>FTP password.</string>
+                   </property>
+                   <property name="echoMode">
+                    <enum>QLineEdit::Password</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="line_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="ftpWidget_4" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_19">
+                 <item>
+                  <widget class="QCheckBox" name="ftpFollowSymlinksCheckbox">
+                   <property name="toolTip">
+                    <string>Follow symlinks or not.</string>
+                   </property>
+                   <property name="text">
+                    <string>Follow Symlinks</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="ftpRecursiveCheckbox">
+                   <property name="toolTip">
+                    <string>Recurively image directories.</string>
+                   </property>
+                   <property name="text">
+                    <string>Recursive</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="ftpPortSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="ftpPortLabel">
+                   <property name="text">
+                    <string>Port:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="ftpPortLineEdit">
+                   <property name="toolTip">
+                    <string>FTP port, default is 21.</string>
+                   </property>
+                   <property name="text">
+                    <string>21</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="smb">
+       <attribute name="title">
+        <string>SMB</string>
+       </attribute>
+       <attribute name="toolTip">
+        <string>Image a remote device via SMB.</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_19">
+        <item>
+         <widget class="QFrame" name="smbFrame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_19">
+           <item row="1" column="0">
+            <widget class="QGroupBox" name="smbGroupBox">
+             <property name="title">
+              <string>SMB</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_18">
+              <item>
+               <widget class="QWidget" name="smbWidget_1" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_15">
+                 <item>
+                  <widget class="QLabel" name="smbHostnameLabel">
+                   <property name="text">
+                    <string>Hostname</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="smbShareLabel">
+                   <property name="text">
+                    <string>Share</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="smbWidget_2" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_16">
+                 <item>
+                  <widget class="QLineEdit" name="smbHostnameLineEdit">
+                   <property name="toolTip">
+                    <string>SMB hostname or IP address.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="smbShareLineEdit">
+                   <property name="toolTip">
+                    <string>SMB share name.</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="smbWidget_3" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_17">
+                 <item>
+                  <widget class="QLabel" name="smbUsernameLabel">
+                   <property name="text">
+                    <string>Username</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="smbPasswordLabel">
+                   <property name="text">
+                    <string>Password</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="smbWidget_4" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_18">
+                 <item>
+                  <widget class="QLineEdit" name="smbUsernameLineEdit">
+                   <property name="toolTip">
+                    <string>SMB username.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="smbPasswordLineEdit">
+                   <property name="toolTip">
+                    <string>SMB password.</string>
+                   </property>
+                   <property name="echoMode">
+                    <enum>QLineEdit::Password</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="line_5">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="smbWidget_5" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_22">
+                 <item>
+                  <widget class="QCheckBox" name="smbFollowSymlinksCheckbox">
+                   <property name="toolTip">
+                    <string>Follow symlinks or not.</string>
+                   </property>
+                   <property name="text">
+                    <string>Follow Symlinks</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="smbRecursiveCheckbox">
+                   <property name="toolTip">
+                    <string>Recurively image directories.</string>
+                   </property>
+                   <property name="text">
+                    <string>Recursive</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="smbPortSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="smbPortLabel">
+                   <property name="text">
+                    <string>Port:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="smbPortLineEdit">
+                   <property name="toolTip">
+                    <string>SMB port, default is 445.</string>
+                   </property>
+                   <property name="text">
+                    <string>445</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QFrame" name="outputFrame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QTextBrowser" name="outputTextBrowser">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="toolTip">
+          <string>Ouptut information is displayed here.</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QWidget" name="imageOptionsWidget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_10">
+       <item>
+        <widget class="QFrame" name="imageOptionsFrame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <item>
+           <widget class="QGroupBox" name="imageOptionsGroupBox">
+            <property name="title">
+             <string>Image Options</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <item>
+              <widget class="QWidget" name="imageOptionsWidget_1" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QCheckBox" name="verboseCheckBox">
+                  <property name="toolTip">
+                   <string>Verbosly output more information.</string>
+                  </property>
+                  <property name="text">
+                   <string>Verbose</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="zipImageCheckBox">
+                  <property name="text">
+                   <string>Use zip</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="encryptImageCheckBox">
+                  <property name="toolTip">
+                   <string>Encrypt the image and contents with a password.</string>
+                  </property>
+                  <property name="text">
+                   <string>Encrypt image</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="encryptionPasswordLabel">
+               <property name="text">
+                <string>Encryption password:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="imageOptionsWidget_3" native="true">
+               <layout class="QVBoxLayout" name="verticalLayout_11">
+                <item>
+                 <widget class="QLineEdit" name="encryptionPasswordLineEdit">
+                  <property name="toolTip">
+                   <string>Encryption password if encryption is enabled.</string>
+                  </property>
+                  <property name="echoMode">
+                   <enum>QLineEdit::Password</enum>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="outputFileLabel">
+               <property name="text">
+                <string>Output file:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="mageOptionsWidget_4" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_7">
+                <item>
+                 <widget class="QLineEdit" name="outputFileLineEdit">
+                  <property name="toolTip">
+                   <string>Output AFF4 file path and name. </string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QToolButton" name="outputFileButton">
+                  <property name="text">
+                   <string>...</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="imageOptionsWidget_2" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_23">
+                <item>
+                 <widget class="QPushButton" name="imagePushButton">
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string>Begin Imaging!</string>
+                  </property>
+                  <property name="statusTip">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>Image!</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="cancelButton">
+                  <property name="palette">
+                   <palette>
+                    <active>
+                     <colorrole role="ButtonText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>237</red>
+                        <green>51</green>
+                        <blue>59</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                    </active>
+                    <inactive>
+                     <colorrole role="ButtonText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>237</red>
+                        <green>51</green>
+                        <blue>59</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                    </inactive>
+                    <disabled>
+                     <colorrole role="ButtonText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>146</red>
+                        <green>149</green>
+                        <blue>149</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                    </disabled>
+                   </palette>
+                  </property>
+                  <property name="toolTip">
+                   <string>Stop imaging.</string>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string>Cancel</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>589</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
