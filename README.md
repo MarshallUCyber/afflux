@@ -252,7 +252,7 @@ Image an SMB share on a Windows machine.
 ```
 python3 afflux.py -p generic_smb -a WINDEV2210EVAL -S \Users\User\Desktop\shared_folder -o test.aff4 -v -u User -P test
 ```
-Verbosely image the sdcard within an Android device `(via ADB)` to `test.aff4' using the afflux standalone windows executable.
+Verbosely image the sdcard `/sdcard` within an Android device `(via ADB)` to `test.aff4` using the afflux standalone windows executable.
 ```
 afflux_windows.exe -p android_adb -a USB -d /sdcard -o test.aff4 -v
 ```
