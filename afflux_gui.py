@@ -260,6 +260,8 @@ class AffluxGui:
                 plugin.arguments.verbose = self.ui.verboseCheckBox.isChecked()
                 plugin.arguments.append = False
                 plugin.verbose = True
+                if self.ui.androidKeygenCheckbox.isChecked():
+                    plugin.key_gen("adb")
                 plugin.sign("adb")
                 if ":" in self.ui.androidAddressLineEdit.text():
                     ip_address, port = self.ui.androidAddressLineEdit.text().split(":")
@@ -298,7 +300,8 @@ class AffluxGui:
                                                    network,
                                                    self.ui.androidFollowSymlinksCheckbox.isChecked(),
                                                    self.ui.androidRootCheckbox.isChecked(),
-                                                   self.ui.zipImageCheckBox.isChecked())
+                                                   self.ui.zipImageCheckBox.isChecked(),
+                                                   keygen=self.ui.androidKeygenCheckbox.isChecked())
             # Pass the thread through so we can emit a signal back to us with text to output
             utils.set_text_worker(self.image_thread)
             self.image_thread.start()

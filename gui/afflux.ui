@@ -432,6 +432,13 @@
                      </widget>
                     </item>
                     <item>
+                     <widget class="QCheckBox" name="androidKeygenCheckbox">
+                      <property name="text">
+                       <string>Keygen</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
                      <widget class="QCheckBox" name="androidFollowSymlinksCheckbox">
                       <property name="text">
                        <string>Follow Symlinks</string>

@@ -93,7 +93,7 @@ class AndroidImageThread(QtCore.QThread):
     signal = QtCore.pyqtSignal(str)
 
     def __init__(self, verbose, directories, output_file, encryption_password, device, network, follow_symlinks, root,
-                 zip_image, parent=None):
+                 zip_image, parent=None, keygen=None):
         super(AndroidImageThread, self).__init__(parent)
         self.verbose = verbose
         self.directories = directories
@@ -105,6 +105,7 @@ class AndroidImageThread(QtCore.QThread):
         self.root = root
         self.result = False
         self.zip = zip_image
+        self.keygen = keygen
 
     def run(self):
         # android_imager = android.AndroidImage(self.verbose)
@@ -114,6 +115,8 @@ class AndroidImageThread(QtCore.QThread):
         plugin.arguments.append = False
         plugin.arguments.verbose = self.verbose
         plugin.imager = imaging.Imager(self.verbose)
+        if self.keygen:
+            plugin.key_gen("adb")
         plugin.sign("adb")
         if self.network:
             if ":" in self.device:
