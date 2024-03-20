@@ -255,7 +255,7 @@ python3 afflux.py -p generic_smb -a WINDEV2210EVAL -S \Users\User\Desktop\shared
 
 ## Pre-built Executables
 
-Portable pre-built executables can be found on the [Releases](https://github.com/Starwarsfan2099/afflux/releases)
+Portable pre-built executables can be found on the [Releases]([https://github.com/MarshallUCyber/afflux/releases/tag/Alpha])
 page for Windows, Mac (Intel), and Linux.
 `pyinstaller` is required to build the executables. 
 If you want to build them yourself, build scripts can be found in the respective system folders: `/windows_executable`,
