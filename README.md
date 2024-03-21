@@ -1,9 +1,8 @@
 # AFFLUX
 
-Afflux is an AFF4 logical imager. 
-The goal of the tool is to logically image modern devices when a physical image may not be possible. 
+Afflux is an AFF4 (Advanced Forensics File Format 4) logical imager designed to create forensic images of modern devices when a physical image may not be practical or possible. It is a versatile tool that offers both command-line interface (CLI) and graphical user interface (GUI) options, making it suitable for a wide range of digital forensic investigations. Afflux may be useful for imaging devices and data sources that use various communication protocols, such as IoT devices, mobile devices, ICS systems, network shares, and even DVRs, where traditional physical imaging methods may not be feasible.
 
-## Goals:
+## Key Features:
 - [x] USB Support
 - [x] iOS Support
 - [x] Android Support
@@ -11,14 +10,14 @@ The goal of the tool is to logically image modern devices when a physical image 
 - [x] Hard drive support
 - [x] FTP support
 - [x] SMB support
-- [X] HTTP maybe
+- [X] HTTP (limited)
 - [X] Apple Watches
 - [X] Properly threaded GUI
-- [ ] ~~Android Watches~~
+- [ ] ~~Android Watches~~ (coming soon)
 
 ## Plugins
 
-Afflux current includes six default plugins. 
+Afflux currently includes six (6) default plugins. 
 Plugins are stored in `/plugins` and can be listed with `python3 afflux.py -p list`.
 
 ```
@@ -37,7 +36,7 @@ usb_drive 	| Image a local USB device or mounted drive.
 
 ## Afflux Options
 
-Afflux supports several optional arguments no matter which plugin is selected. 
+Afflux supports several optional arguments, no matter which plugin is selected. 
 These are shown with `python3 afflux.py -h` and are also shown with each plugin's `-h` argument.
 
 ```
@@ -308,3 +307,24 @@ Requires Pandoc.
     sudo cp afflux.1 /usr/local/man/man1
     sudo gzip /usr/local/man/man1/afflux.1 -f
     sudo mandb
+
+## About AFF4
+
+AFF4 is an open, extensible file format for storing and sharing of digital evidence, arbitrary case-related information, and forensic workflow. It was introduced in the paper ["Extending the advanced forensic format to accommodate multiple data sources, logical evidence, arbitrary information and forensic workflow"](https://www.sciencedirect.com/science/article/pii/S1742287609000401) by Michael Cohen, Simson Garfinkel, and Bradley Schatz (Digital Investigation 6, 2009, S57–S68).
+
+Key features of AFF4 include:
+
+- Ability to store multiple heterogeneous data types, including data from multiple storage devices, network packets, memory images, extracted logical evidence, and forensic workflow.
+- Improved separation between the underlying storage mechanism and forensic software that uses the evidence.
+- Support for storing evidence in a single file, multiple files, a relational database, or an object management system.
+- Backwards compatibility with the earlier AFF format.
+
+AFF4 introduces several key concepts:
+
+- **AFF4 Objects**: The basic building blocks, identified by unique URNs.
+- **Relations**: Factual statements describing relationships between AFF4 Objects or their properties.
+- **Volumes**: Responsible for providing storage to AFF4 segments.
+- **Streams**: Provide the ability to seek and read data, and implement abstracted storage.
+- **Segments**: Single units of data written to a volume.
+- **References**: Allow objects to refer to other objects using URIs or URLs.
+- **Universal Resolver**: Collects and resolves attributes for different AFF4 Objects.
