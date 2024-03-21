@@ -1,6 +1,6 @@
 # AFFLUX
 
-Afflux is an AFF4 (Advanced Forensics File Format 4) logical imager designed to create forensic images of modern devices when a physical image may not be practical or possible. It is a versatile tool that offers both command-line interface (CLI) and graphical user interface (GUI) options, making it suitable for a wide range of digital forensic investigations. Afflux may be useful for imaging devices and data sources that use various communication protocols, such as IoT devices, mobile devices, ICS systems, network shares, and even DVRs, where traditional physical imaging methods may not be feasible.
+Afflux is an [AFF4](https://www2.aff4.org/) (Advanced Forensics File Format 4) logical imager designed to create forensic images of modern devices when a physical image may not be practical or possible. It is a versatile tool written in [Python](https://www.python.org/), allowing digital forensics professionals to easily modify and scale the tool to suit their specific needs and applications. Afflux offers both command-line interface (CLI) and graphical user interface (GUI) options, making it suitable for a wide range of digital forensic investigations. It may be useful for imaging devices and data sources that use various communication protocols, such as IoT devices, mobile devices, ICS systems, network shares, and even DVRs, where traditional physical imaging methods may not be feasible.
 
 ## Key Features:
 - [x] USB Support
