@@ -281,7 +281,7 @@ Then simply run `install_windows.bat`.
 
 ### Linux/MacOS
 
-Install Python 3 and run `install_linuix.sh`.
+Install Python 3 and run `install_linux.sh`.
 
 ## GUI Modifications
 
