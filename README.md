@@ -308,7 +308,9 @@ Requires Pandoc.
     sudo gzip /usr/local/man/man1/afflux.1 -f
     sudo mandb
 
-## About AFF4
+## About 
+
+### About AFF4
 
 AFF4 is an open, extensible file format for storing and sharing of digital evidence, arbitrary case-related information, and forensic workflow. It was introduced in the paper ["Extending the advanced forensic format to accommodate multiple data sources, logical evidence, arbitrary information and forensic workflow"](https://www.sciencedirect.com/science/article/pii/S1742287609000401) by Michael Cohen, Simson Garfinkel, and Bradley Schatz (Digital Investigation 6, 2009, S57–S68).
 
@@ -328,3 +330,11 @@ AFF4 introduces several key concepts:
 - **Segments**: Single units of data written to a volume.
 - **References**: Allow objects to refer to other objects using URIs or URLs.
 - **Universal Resolver**: Collects and resolves attributes for different AFF4 Objects.
+
+### CASE Support
+
+Afflux supports the [Cyber-investigation Analysis Standard Expression (CASE)](https://https://caseontology.org/) Ontology standard. CASE is a community-developed evolving standard that provides a structured (ontology-based) specification for representing information commonly analyzed and exchanged by people and systems during investigations involving digital evidence. The power of CASE is that it provides a common language to support automated normalization, combination and validation of varied information sources to facilitate analysis and exploration of investigative questions (who, when, how long, where). In addition to representing tool results, CASE ensures that analysis results can be traced back to their source(s), keeping track of when, where and who used which tools to perform investigative actions on data sources.
+
+## Funding
+
+Afflux was supported by funding from the [United States Secret Service National Computer Forensics Institute (NCFI)](https://ncfi.usss.gov)
