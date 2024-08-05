@@ -54,6 +54,7 @@ optional arguments:
                         print the AFF4 image's metadata.
   -p PLUGIN_NAME, --plugin PLUGIN_NAME
                         specify a plugin to load, or use "list" to list all plugins.
+  -z, --zip             write to a Zip container instead of AFF4.
   -x AFF4_IMAGE, --extract AFF4_IMAGE
                         extract all files and folders from an AFF4 image.
 ```
