@@ -114,6 +114,9 @@ And `-k` is used to pair or repair the device.
   -k, --keygen          regenerate pairing keys for the device.
   --timeout TIMEOUT     ADB timeout.
 ```
+NOTE: A connection error may occur when attempting to image an Android device. If this occurs, run the application once and the Android device will present a 
+pop up window asking to trust the device and accept the key. Run it again and repeat the process. The third run should succeed and the application will work
+as expected. 
 
 ### Generic_SSH
 
@@ -235,6 +238,12 @@ Attempt to get root access, start imaging at `/` and ignore `/dev` and `/proc`.
 python3 afflux.py -p android_adb -a 10.11.1.5:5001 --root -d / /dev- /proc- -o test.aff4 -v
 ```
 
+Verbosely image an Android device through USB to `adb_usb.aff4`, imaging at `/`.
+
+```
+python3 afflux.py -p android_adb -a USB -d / -o adb_usb.aff4 -v
+```
+
 Create an image (`home.aff4`) of the `/home` directory on a Linux system.
 
 ```
@@ -245,6 +254,14 @@ Image a jailbroken iPhone (`10.11.1.7`) via SSH.
 
 ```
 python3 afflux.py -p ios_ssh -a 10.11.1.7 -o iphone_ssh.aff4
+```
+
+Create an image of the `/home` directory on a Linux system (`10.10.10.10`) through SSH.
+In this example using the username `root` and password `toor` over port 2222, outputting
+to `ssh_home.aff4`.
+
+```
+python3 afflux.py -p generic_ssh -a 10.10.10.10 -u root -P toor --port 2222 -d /home -o ssh_home.aff4
 ```
 
 Image an SMB share on a Windows machine. 
