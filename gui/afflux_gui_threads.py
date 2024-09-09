@@ -12,7 +12,7 @@ plugin_names = {
     "android": "android_adb",
     "ssh": "generic_ssh",
     "ftp": "generic_ftp",
-    "smb": "generic_ftp"
+    "smb": "generic_smb"
 }
 
 plugins = PluginCollection('plugins', False)
