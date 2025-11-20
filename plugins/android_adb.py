@@ -279,11 +279,8 @@ class AndroidImage(plugin_manager.Plugin):
                     for directories in path_name[1]:
                         local_dir = utils.check_file_names(tmp_path + path_name[0] + self.imager.separator + directories)
                         if self.arguments.verbose:
-                            if path_name[0] == "/":  # TODO: Find a better solution for the path printing issue
-                                utils.multi_print(f"{Fore.GREEN}\tMaking dir: {Fore.RESET}{path_name[0] + directories}")
-                            else:
-                                utils.multi_print(f"{Fore.GREEN}\tMaking dir: "
-                                                  f"{Fore.RESET}{str(path_name[0]) + '/' + directories}")
+                            display_path = path.join(path_name[0], directories)
+                            utils.multi_print(f"{Fore.GREEN}\tMaking dir: {Fore.RESET}{display_path}")
                         mkdir(local_dir)
 
                     for file_name in path_name[2]:
@@ -291,11 +288,8 @@ class AndroidImage(plugin_manager.Plugin):
                                                                   file_name)
                         stat = self.device.stat((str(path_name[0]) + "/" + file_name))
                         if self.arguments.verbose:
-                            if path_name[0] == "/":
-                                utils.multi_print(f"{Fore.GREEN}\tCopying file: {Fore.RESET}{path_name[0] + file_name}")
-                            else:
-                                utils.multi_print(f"{Fore.GREEN}\tCopying file: "
-                                                  f"{Fore.RESET}{str(path_name[0]) + '/' + file_name}")
+                            display_path = path.join(path_name[0], file_name)
+                            utils.multi_print(f"{Fore.GREEN}\tCopying file: {Fore.RESET}{display_path}")
                         self.device.pull((str(path_name[0]) + "/" + file_name), output_file_path)
                         # Change 'st_mtime' to the original time from the device
                         info = {'st_mtime': datetime.fromtimestamp(stat[2])}
