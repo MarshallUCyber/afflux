@@ -5,10 +5,10 @@ All notable changes to AFFLUX will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2025-11-20
+## [1.0.0-beta] - 2025-11-20
 
 ### Added
-- Initial stable release of AFFLUX - AFF4 logical imager
+- Initial beta release of AFFLUX - AFF4 logical imager
 - Support for multiple device types and protocols:
   - USB devices and drives
   - iOS devices (jailbroken and non-jailbroken via AFC)
@@ -87,7 +87,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Release Notes
 
-This is the first stable release of AFFLUX, a versatile AFF4 logical imager designed for modern forensic imaging needs. AFFLUX enables forensic professionals to create logical images of devices where physical imaging may not be practical, including IoT devices, mobile devices, network shares, and cloud storage.
+This is the first beta release of AFFLUX, a versatile AFF4 logical imager designed for modern forensic imaging needs. AFFLUX enables forensic professionals to create logical images of devices where physical imaging may not be practical, including IoT devices, mobile devices, network shares, and cloud storage.
+
+**Note**: This is a beta release. Testing and feedback are welcome to help improve stability before the stable 1.0.0 release.
 
 ### Supported Devices and Protocols
 - Mobile: iOS (AFC, SSH), Android (ADB)
@@ -104,4 +106,4 @@ This is the first stable release of AFFLUX, a versatile AFF4 logical imager desi
 ### Funding
 This project was supported by funding from the United States Secret Service National Computer Forensics Institute (NCFI).
 
-[1.0.0]: https://github.com/MarshallUCyber/afflux/releases/tag/v1.0.0
+[1.0.0-beta]: https://github.com/MarshallUCyber/afflux/releases/tag/v1.0.0-beta
